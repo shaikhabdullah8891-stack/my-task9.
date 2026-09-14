@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    color: #1e293b;
+}
+
+.container {
+    width: 100%;
+    max-width: 550px;
+}
+
+.expense-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.form input:focus {
+    border-color: #2563eb;
+}
+
+#addBtn {
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#addBtn:hover {
+    background: #1d4ed8;
+}
+
+.total-box {
+    margin: 25px 0;
+    padding: 20px;
+    text-align: center;
+    background: #eff6ff;
+    border-radius: 12px;
+}
+
+.total-box p {
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+.total-box h2 {
+    font-size: 30px;
+    color: #1e3a8a;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+#expenseList {
+    list-style: none;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.expense-info strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.expense-info span {
+    color: #64748b;
+}
+
+.delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 7px;
+    background: #ef4444;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #94a3b8;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .expense-card {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .expense-item {
+        gap: 10px;
+    }
+}
